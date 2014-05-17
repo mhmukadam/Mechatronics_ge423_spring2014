@@ -1,0 +1,39 @@
+********************************************************************************
+TMS320C6x Hex Converter                                                   v7.4.6
+********************************************************************************
+
+INPUT FILE NAME: <C:/robobuddies/repo/finalp/finalpProject\debug\finalp.out>
+OUTPUT FORMAT:   Binary
+
+PHYSICAL MEMORY PARAMETERS
+   Default data width   :   8
+   Default memory width :   8
+   Default output width :   8
+
+BOOT LOADER PARAMETERS
+   Table Address: 0x0000, PAGE 0
+   Entry Point  : 0x1182da00
+
+
+OUTPUT TRANSLATION MAP
+--------------------------------------------------------------------------------
+00000000..0003ffff  Page=0  Memory Width=8  ROM Width=8  "SPIFLASH"
+--------------------------------------------------------------------------------
+   OUTPUT FILES: C:/robobuddies/repo/finalp/finalpProject\..\finalp.bin [b0..b7]
+
+   CONTENTS: 00000000..0001fe0b   BOOT TABLE
+                         .hwi_vec : btad=00000000  dest=1182e800 size=00000200
+                            .bios : btad=0000020c  dest=11820980 size=00004500
+                           .pinit : btad=00004714  dest=11829494 size=0000000c
+                            .text : btad=00004728  dest=11800000 size=00017100
+                           .cinit : btad=0001b830  dest=11824e80 size=00002604
+                          .switch : btad=0001de3c  dest=1182b748 size=00000084
+                         .gblinit : btad=0001dec8  dest=1182f0c8 size=00000064
+                         .sysinit : btad=0001df34  dest=1182d6e0 size=00000500
+                         .trcdata : btad=0001e43c  dest=1182d6d4 size=0000000c
+                       .rtdx_text : btad=0001e450  dest=118294a0 size=00000fc0
+                           .const : btad=0001f418  dest=1182d000 size=000006d4
+                            .args : btad=0001faf4  dest=1182b7fc size=00000004
+                           .trace : btad=0001fb00  dest=1182e4f8 size=00000200
+                             .log : btad=0001fd08  dest=1182b7cc size=00000030
+                             .sts : btad=0001fd40  dest=1182f008 size=000000c0

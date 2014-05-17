@@ -1,0 +1,53 @@
+#define regOffset					r0
+#define regVal						r1
+#define CONST_PRUSSINTC				C0
+#define GER_OFFSET					0x10
+#define SICR_OFFSET					0x24
+#define EISR_OFFSET					0x28
+#define HIESR_OFFSET				0x34
+#define HOST_NUM					2
+#define CHN_NUM						2
+#define SYS_EVT						32
+#define INTC_CHNMAP_REGS_OFFSET		0x0400
+#define INTC_HOSTMAP_REGS_OFFSET	0x0800
+
+#define RGB_PTR			r0
+#define EVENT			r1
+#define	RAW_FIELD1_PTR	r2
+#define	RAW_FIELD2_PTR	r3
+#define	COL_CNTR		r4.w0
+#define	ROW_CNTR		r4.w2
+#define	B_RAW			r7.b0
+#define G1_RAW			r7.b1
+#define G2_RAW			r7.b2
+#define G_FULL			r7.w1
+#define R_RAW			r7.b3
+#define R				r8.b2
+#define G				r8.b1
+#define B				r8.b0
+#define RGBSMALL_PTR    r9
+#define RGB_PTR2        r10
+#define RAW_FIELD3_PTR  r11
+#define RAW_FIELD4_PTR  r12
+#define Rsmall          r13.w0
+#define Gsmall          r13.w2
+#define Bsmall          r14.w0
+#define Rtmp            r14.w2
+#define Gtmp            r15.w0
+#define Btmp            r15.w2
+#define CTBIR_OFFSET	0x20
+#define RGB_DATA_BASE	0x80007400
+#define RGB2_DATA_BASE  0x80007610
+#define RGB_SMALL_BASE  0x800029c0
+#define	RAW_DATA_BASE1	0xc3F00000
+#define	RAW_DATA_BASE2	0xc3F00160
+#define	RAW_DATA_BASE3	0xc3F002C0
+#define	RAW_DATA_BASE4	0xc3F00420
+#define	IMG_ROWS		144
+#define	IMG_COLS		176
+
+.macro  MOV32
+.mparam dst, src
+    MOV     dst.w0, src & 0xFFFF
+    MOV     dst.w2, src >> 16
+.endm

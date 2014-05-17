@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configurations XML_version="1.2" id="configurations_0">
+<configuration XML_version="1.2" id="Spectrum Digital XDS510USB Emulator_0">
+        <instance XML_version="1.2" desc="Spectrum Digital XDS510USB Emulator_0" href="connections/SD510USB_Connection.xml" id="Spectrum Digital XDS510USB Emulator_0" xml="SD510USB_Connection.xml" xmlpath="connections"/>
+        <connection XML_version="1.2" id="Spectrum Digital XDS510USB Emulator_0">
+            <instance XML_version="1.2" href="drivers/sdgoicepickusb_c.xml" id="drivers" xml="sdgoicepickusb_c.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/sdgo674xpusb.xml" id="drivers" xml="sdgo674xpusb.xml" xmlpath="drivers"/>
+			<instance XML_version="1.2" href="drivers/sdxds510usbpru.xml" id="drivers" xml="sdxds510usbpru.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/sdgoarm9usb.xml" id="drivers" xml="sdgoarm9usb.xml" xmlpath="drivers"/>
+            <instance XML_version="1.2" href="drivers/sdgoetb11usb.xml" id="drivers" xml="sdgoetb11usb.xml" xmlpath="drivers"/>
+            <platform XML_version="1.2" id="platform_0">
+                <instance XML_version="1.2" desc="OMAPL138_0" href="devices/OMAPL138.xml" id="OMAPL138_0" xml="OMAPL138.xml" xmlpath="devices"/>
+            <device HW_revision="1" XML_version="1.2" description="OMAPL138 - ARM9 and C674x Floating point DSP" id="OMAPL138_0" partnum="OMAPL138" simulation="no">
+                    <router HW_revision="" XML_version="1.2" description="" id="device_0" isa="ICEPICK_C">
+                        <subpath id="device_1">
+                            <cpu HW_revision="" XML_version="1.2" description="" deviceSim="false" id="device_2" isa="TMS320C674X">
+                                <property Type="filepathfield" Value="..\..\GEL_LogicPD\OMAPL138_DSP.gel" id="GEL File"/>
+                            </cpu>
+                        </subpath>
+                        <subpath id="device_3">
+                            <cpu HW_revision="" XML_version="1.2" description="" deviceSim="false" id="device_4" isa="ARM9">
+                                <property Type="filepathfield" Value="..\..\GEL_LogicPD\TI_Update_OMAPL138_ARM.gel" id="GEL File"/>
+                            </cpu>
+                        </subpath>
+                    </router>
+                </device>
+            </platform>
+        </connection>
+    </configuration>
+</configurations>

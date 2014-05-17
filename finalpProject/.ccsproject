@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?ccsproject version="1.0"?>
+
+<projectOptions>
+<deviceVariant value="com.ti.ccstudio.deviceModel.C6000.GenericC674xDevice"/>
+<deviceEndianness value="little"/>
+<codegenToolVersion value="7.3.1"/>
+<isElfFormat value="false"/>
+<connection value=""/>
+<rts value="libc.a"/>
+<templateProperties value="id=com.ti.rtsc.DSPBIOS.example_121,type=bios5,products=com.ti.rtsc.DSPBIOS,"/>
+<deviceFamily value="C6000"/>
+<isTargetManual value="false"/>
+</projectOptions>
+
